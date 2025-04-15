@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanrio Town - A Wikipédia dos Personagens</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kansei&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Sanrio Town!</h1>
+    </header>
+
+    <section id="intro">
+        <div class="content">
+            <h2>Sobre a Sanrio</h2>
+            <p>A <strong>Sanrio</strong> é uma empresa japonesa fundada em 1960 por Shintaro Tsuji, inicialmente como uma loja de presentes chamada "Yamanashi Silk Center". A empresa ficou famosa pela criação de personagens icônicos, sendo <strong>Hello Kitty</strong> o mais conhecido. A Sanrio é especializada no design, produção e licenciamento de produtos com personagens cativantes, que vão desde pelúcias e acessórios até roupas, eletrônicos e itens de decoração.</p>
+            
+            <h3>Estratégia de Branding</h3>
+            <p>A marca se destaca por sua estratégia de branding, criando uma ligação emocional com os consumidores por meio de personagens fofos, conhecidos como <em>kawaii</em>. Além da Hello Kitty, outros personagens populares incluem <strong>My Melody</strong>, <strong>Cinnamoroll</strong> e <strong>Keroppi</strong>.</p>
+            
+            <h3>Presença Global</h3>
+            <p>A Sanrio também expandiu sua atuação para filmes, parques temáticos e colaborações com outras marcas e empresas. A empresa tem presença global e uma forte influência na cultura pop, especialmente no Japão e em mercados internacionais, como Estados Unidos e Europa.</p>
+            
+            <h3>Investimentos Futuros</h3>
+            <p>Além de sua operação de licenciamento de produtos, a Sanrio também tem investido em experiências digitais e em parcerias estratégicas para manter sua relevância e apelo entre novas gerações.</p>
+        </div>
+    </section>
+
+    <div class="menu-lateral" id="menuLateral">
+        <button class="toggle-btn" id="toggleMenu">▶</button>
+        <a href="#intro">Início</a>
+        <a href="#characters">Personagens</a>
+
+      </div>
+ 
+      <button id="toggleMusic" class="toggle-btn">🔊 Música</button>
+
+      <audio id="bgMusic" autoplay loop>
+        <source src="xangai-crab.mp3.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio HTML5.
+      </audio>
+      <script>
+        const music = document.getElementById('bgMusic');
+        const button = document.getElementById('toggleMusic');
+        let isPlaying = true;
+      
+        button.addEventListener('click', () => {
+      
+          if (isPlaying) {
+            music.pause();
+            button.textContent = '🔇 Música';
+          } else {
+            music.play();
+            button.textContent = '🔊 Música';
+          }
+      
+          isPlaying = !isPlaying;
+        });
+      </script>
+      
+      </div>
+    <section id="characters">
+        <div class="character">
+            <h2>Hello Kitty</h2>
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlxj27FMVcvchFuI9L4shs10WnVSRwEDIrWQ&s alt="Hello Kitty" >
+            <p><strong>Criadora:</strong> Yuko Shimizu</p>
+            <p><strong>Primeira aparição:</strong> 1974</p>
+            <p><strong>Proprietária:</strong> Sanrio</p>
+            <p><strong>Espécie:</strong> Gato</p>
+            <p><strong>Personalidade:</strong> Simpática, gentil e amigável.</p>
+            <p>Hello Kitty é uma personagem icônica da Sanrio, criada em 1974. Representada como um gato branco sem boca e com um laço vermelho, ela rapidamente se tornou um símbolo de fofura (kawaii) e um fenômeno global. Além de ser estrela em produtos como roupas, brinquedos e acessórios, Hello Kitty também apareceu em filmes e animações, sendo reconhecida mundialmente. Sua simplicidade e apelo universal a tornaram uma das personagens mais famosas e lucrativas da cultura pop.</p>
+        </div>
+
+        <div class="character">
+            <h2>My Melody</h2>
+            <img src=https://www.pngall.com/wp-content/uploads/13/My-Melody-PNG-Images.png alt="My Melody" height="250" width="200">
+            <p><strong>Criadora:</strong> Yuko Shimizu</p>
+            <p><strong>Primeira aparição:</strong> 1975</p>
+            <p><strong>Proprietária:</strong> Sanrio</p>
+            <p><strong>Espécie:</strong> Coelha</p>
+            <p><strong>Personalidade:</strong> Doce, tímida e amigável.</p>
+            <p>My Melody é uma personagem da Sanrio, criada em 1975, que conquistou corações com sua aparência fofa, suas grandes orelhas e o capô ou laço rosa que sempre usa. Ela mora na floresta e é uma amiga querida de Hello Kitty. Com um visual suave e encantador, My Melody representa o espírito de amizade, gentileza e ternura, características que fizeram dela uma das personagens mais amadas da Sanrio.</p>
+            <p>A personagem se tornou um ícone do estilo <em>kawaii</em>, simbolizando a fofura e simplicidade. Sua imagem é frequentemente usada em uma variedade de produtos, como brinquedos, roupas, acessórios, e também em artigos de decoração. Sua personalidade é doce e um pouco tímida, mas ela é conhecida por sua grande simpatia e carinho pelos amigos.</p>
+            <p>My Melody também é um símbolo de amizade e gentileza, valores que são transmitidos em suas histórias e representações em mídia. A coelha se tornou um fenômeno cultural e continua a encantar novas gerações com seu charme adorável e sua natureza gentil.</p>
+        </div>
+
+        <div class="character">
+            <h2>Cinnamoroll</h2>
+            <img src="https://sm.ign.com/ign_br/screenshot/default/cinnamoroll_zu2z.png" alt="Cinnamoroll">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 2001</p>
+            <p><strong>Espécie:</strong> Cachorro</p>
+            <p><strong>Personalidade:</strong> Alegre, amigável e sonhador.</p>
+            <p><strong>Cinnamoroll</strong> é um personagem da Sanrio, criado em 2001, conhecido por suas grandes orelhas fofas e sua aparência de nuvem com cauda enrolada. Sua personalidade doce e sonhadora rapidamente conquistou os corações dos fãs, e ele se tornou um ícone do estilo <em>kawaii</em>.</p>
+            <p>Ele vive em uma cidade onde adora fazer amigos e ajudar os outros, sempre com um sorriso no rosto. Sua natureza alegre e amigável fez com que se destacasse entre outros personagens da Sanrio, e ele se tornou muito popular em produtos como pelúcias, acessórios e itens de decoração.</p>
+            <p>Cinnamoroll também estrelou várias animações e tem uma base de fãs fiel, especialmente entre os jovens. Sua popularidade continua a crescer, e ele é um símbolo de fofura e bondade, sempre transmitindo mensagens de amizade e positividade. Ele é mais do que apenas uma figura adorável; Cinnamoroll representa a felicidade simples e os sonhos impossíveis, cativando tanto crianças quanto adultos.</p>
+        </div>
+
+        <div class="character">
+            <h2>Keroppi</h2>
+            <img src="https://images.squarespace-cdn.com/content/v1/5b0e8599af2096a0df635bd1/1540856210882-A8IHGXRV5Z2IPPJI31QT/keroppi.png?format=1500w" alt="Keroppi" height="250" width="200">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1988</p>
+            <p><strong>Espécie:</strong> Sapo</p>
+            <p><strong>Personalidade:</strong> Energético, otimista e aventureiro.</p>
+            <p><strong>Keroppi</strong> é um personagem da Sanrio, criado em 1988. Ele é um sapo verde que vive no lago Donut e é conhecido por seu espírito aventureiro, otimista e seu grande sorriso. Keroppi tem uma paixão por explorar o mundo ao seu redor e adora se envolver em diversas aventuras. Sua personalidade enérgica e positiva o torna um dos personagens mais carismáticos da Sanrio.</p>
+            <p>Keroppi rapidamente se tornou um ícone da cultura kawaii, com sua imagem sendo usada em uma variedade de produtos, como brinquedos, roupas, acessórios e itens de decoração. Ele também fez aparições em animações e histórias em quadrinhos, ganhando uma base de fãs fiel, especialmente entre os jovens.</p>
+            <p>Com seu entusiasmo e alegria, Keroppi conquistou fãs ao redor do mundo e continua a ser um dos personagens mais amados da Sanrio, transmitindo uma mensagem de positividade, aventura e amizade.</p>
+        </div>
+
+        <div class="character">
+            <h2>Chococat</h2>
+            <img src=https://i.pinimg.com/originals/e0/d8/22/e0d8221aeef222f2064a71f0e0a86aa4.png alt="Chococat">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1996</p>
+            <p><strong>Espécie:</strong> Gato</p>
+            <p><strong>Personalidade:</strong> Curioso, inteligente e amigável.</p>
+            <p><strong>Chococat</strong> é um personagem da Sanrio, criado em 1996. Ele é um gato preto com grandes olhos expressivos e uma expressão curiosa, sempre em busca de aprender mais sobre o mundo ao seu redor. Seu nome vem de sua cor e do seu amor por chocolate, que se reflete em sua aparência simples, mas charmosa.</p>
+            <p>Chococat é conhecido por sua inteligência, prestatividade e seu grande interesse por tecnologia. Ele adora se manter atualizado sobre as últimas inovações e frequentemente aparece em produtos como mochilas, acessórios, artigos de papelaria e outros itens tecnológicos.</p>
+            <p>Com sua personalidade curiosa e encantadora, Chococat conquistou fãs ao redor do mundo. Seu design simples e sua paixão por aprender tornaram-no um dos personagens mais adorados da Sanrio, especialmente entre aqueles que gostam de tecnologia e criatividade.</p>
+        </div>
+
+        <div class="character">
+            <h2>Badtz-Maru</h2>
+            <img src="https://i.pinimg.com/474x/8e/8d/8c/8e8d8ccae55f6eb103e34436fa7c93ea.jpg" alt="Bad Badtz-Maru"  height="250" width="200">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1993</p>
+            <p><strong>Espécie:</strong> Pinguim</p>
+            <p><strong>Personalidade:</strong> Rebelde, engraçado e travesso.</p>
+            <p><strong>Badtz-Maru</strong> é um personagem da Sanrio, criado em 1993. Ele é um pinguim de aparência atrevida e um estilo irreverente, com uma personalidade rebelde e sarcástica. Ao contrário de outros personagens fofos da Sanrio, Badtz-Maru se destaca por seu comportamento travesso e sua tendência a causar problemas.</p>
+            <p>Seu visual é marcado por um sorriso travesso e um olhar desafiador, que rapidamente conquistou os fãs mais jovens, especialmente aqueles que apreciam um toque de humor e irreverência. Badtz-Maru não é o típico personagem fofinho da Sanrio, e é justamente essa diferença que o tornou um ícone entre aqueles que buscam algo mais ousado e engraçado.</p>
+            <p>Ele é frequentemente encontrado em produtos como roupas, acessórios e artigos de papelaria, mantendo sua imagem irreverente e divertida, que ressoa com muitas pessoas que se identificam com sua atitude sarcástica e sua personalidade única.</p>
+        </div>
+
+        <div class="character">
+            <h2>Pompom Purin</h2>
+            <img src="https://licensingcon.com.br/wp-content/uploads/2022/06/pompo.png" alt="Pompom Purin" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1996</p>
+            <p><strong>Espécie:</strong> Cão (Golden Retriever)</p>
+            <p><strong>Personalidade:</strong> Preguiçoso, fofo e amigável.</p>
+            <p><strong>Pompom Purin</strong> é um personagem da Sanrio, criado em 1996. Ele é um cão da raça Golden Retriever, conhecido por seu visual fofinho, com um chapéu de beisebol marrom e uma personalidade relaxada e preguiçosa. Purin tem um comportamento tranquilo e adora passar o tempo descansando e saboreando seu doce favorito, o pudim.</p>
+            <p>Seu estilo descontraído e amigável fez dele um dos ícones mais queridos da Sanrio. Sua figura charmosa e seu amor por descanso conquistaram muitos fãs ao redor do mundo, tornando-o um símbolo de fofura e simpatia.</p>
+            <p>Pompom Purin aparece em uma ampla variedade de produtos, como pelúcias, acessórios, itens de decoração e muito mais. Seu visual adorável e sua personalidade calma fazem dele um personagem perfeito para quem busca algo acolhedor e reconfortante, sempre transmitindo uma sensação de paz e amizade.</p>
+        </div>
+
+        <div class="character">
+            <h2>Little Twin Stars</h2>
+            <img src=https://i.pinimg.com/736x/f8/61/7a/f8617aa5734b550b602f3c8bc31547af.jpg alt="Little Twin Stars"  height="250" width="350">
+            <p><strong>Criadores:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1985</p>
+            <p><strong>Espécie:</strong> Anjos</p>
+            <p><strong>Personalidades:</strong> Kiki (irmão) é aventureiro e corajoso, enquanto Lala (irmã) é doce, gentil e sonhadora.</p>
+            <p><strong>Little Twin Stars</strong> são dois personagens encantadores da Sanrio, criados em 1985. Kiki e Lala são dois irmãos anjos que vivem no céu, representando duas personalidades complementares. Kiki, o irmão, é aventureiro, corajoso e sempre pronto para explorar o desconhecido. Já Lala, a irmã, é doce, gentil e sonhadora, sempre buscando espalhar harmonia e magia ao seu redor.</p>
+            <p>Ambos são frequentemente retratados com cabelos coloridos e vestindo roupas decoradas com estrelas e nuvens, uma estética suave e encantadora que os tornou extremamente populares. Seus visuais cativantes e suas personalidades contrastantes fazem com que sejam amados por fãs de todas as idades.</p>
+            <p>Little Twin Stars aparecem em diversos produtos, como brinquedos, roupas, acessórios e artigos de papelaria. Eles são símbolos de esperança, harmonia e a magia dos sonhos, transmitindo uma sensação de paz e positividade. Sua história de amizade e irmandade, junto com sua beleza celestial, tornou-os um dos pares mais adorados da Sanrio.</p>
+        </div>
+
+        <div class="character">
+            <h2>Kuromi</h2>
+            <img src=https://i.pinimg.com/564x/f0/5d/0c/f05d0c6d00649afba156316514972cb6.jpg alt="Kuromi" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 2005</p>
+            <p><strong>Espécie:</strong> Coelha anã</p>
+            <p><strong>Personalidade:</strong> Rebelde, ousada e um pouco travessa.</p>
+            <p><strong>Kuromi</strong> é uma personagem da Sanrio, criada em 2005. Ela é uma coelha de pelúcia com um visual inspirado no estilo gótico e punk, sempre usando um chapéu de caveira rosa que complementa seu visual ousado. Ao contrário de muitos outros personagens fofos da Sanrio, Kuromi se destaca por sua personalidade rebelde, ousada e um pouco travessa, o que a torna um ícone para os fãs que gostam de um estilo alternativo.</p>
+            <p>Apesar de seu visual "durão", Kuromi também tem um lado doce e vulnerável, o que a torna ainda mais interessante para seus fãs. Ela é muito popular entre os jovens e se tornou um símbolo de atitude e autenticidade.</p>
+            <p>Kuromi aparece em uma grande variedade de produtos, como roupas, acessórios, itens de papelaria e muito mais, sempre mantendo seu estilo ousado e irreverente. Sua popularidade só cresce, especialmente entre aqueles que se identificam com sua atitude única e seu visual alternativo.</p>
+        </div>
+
+        <div class="character">
+            <h2>Monkichi</h2>
+            <img src=https://i.pinimg.com/564x/b4/ee/e9/b4eee9a62293fa12db82c5de9b38f03a.jpg alt="Monkichi" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1989</p>
+            <p><strong>Espécie:</strong> Macaco</p>
+            <p><strong>Personalidade:</strong> Alegre, ingênuo e brincalhão.</p>
+            <p><strong>Monkichi</strong> é um personagem da Sanrio, criado em 1989. Ele é um macaco com uma personalidade alegre e brincalhona, sempre se metendo em travessuras e situações engraçadas. Seu visual simples e fofinho, com uma expressão amigável e um sorriso constante, o torna irresistível.</p>
+            <p>Monkichi é adorado por sua natureza ingênua e seu charme cativante, o que o torna querido por pessoas de todas as idades. Sua aparência alegre e seu jeito travesso conquistaram uma base de fãs fiel ao longo dos anos.</p>
+            <p>Ele apareceu em diversos produtos, como brinquedos, acessórios e artigos de papelaria, sempre com seu visual encantador e personalidade divertida. Monkichi se tornou um dos personagens mais adorados da Sanrio, continuando a espalhar alegria e diversão onde quer que apareça.</p>
+        </div>
+
+        <div class="character">
+            <h2>Hangyodon</h2>
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDFIgcQCYNHPPgoHRuRDe1gxRhWcjZQDh3g&s alt="Hangyodon" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1987</p>
+            <p><strong>Espécie:</strong> Peixe</p>
+            <p><strong>Personalidade:</strong> Engraçado, atrapalhado e um pouco desajeitado.</p>
+            <p><strong>Hangyodon</strong> é um personagem da Sanrio, criado em 1987. Ele é um peixe com uma aparência única, que mistura elementos humanos e animais. Seu visual peculiar, com grandes olhos expressivos e uma boca que transmite sua personalidade engraçada, o torna inconfundível.</p>
+            <p>Hangyodon é conhecido por seu humor peculiar e comportamento desajeitado, sempre tentando agradar, mas frequentemente se metendo em confusão devido à sua natureza atrapalhada. Ele é um personagem carismático que faz seus fãs rirem com suas trapalhadas e seu jeito sincero de ser.</p>
+            <p>Apesar de ser um pouco desajeitado, Hangyodon é muito querido pelos fãs da Sanrio, e sua popularidade não para de crescer. Ele aparece em diversos produtos, como brinquedos, acessórios e artigos de papelaria, e continua a conquistar corações por seu charme atrapalhado e sua forma única de ser.</p>
+        </div>
+
+        <div class="character">
+            <h2>Wish Me Mell</h2>
+            <img src=https://upload.wikimedia.org/wikipedia/en/2/27/Mell_official_chara.jpg alt="Wish Me Mell" height="250" width="200">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1997</p>
+            <p><strong>Espécie:</strong> Coelho</p>
+            <p><strong>Personalidade:</strong> Meiga, gentil e carinhosa.</p>
+            <p><strong>Wish Me Mell</strong> é um personagem da Sanrio, criado em 1997. Ele é um coelhinho muito doce e amigável, com uma aparência suave e encantadora. Seu visual é composto por orelhas grandes e um chapéu de estrela, que lhe conferem um toque mágico e adorável.</p>
+            <p>Com uma personalidade calma e gentil, Wish Me Mell é sempre preocupado com o bem-estar dos outros, transmitindo uma sensação de tranquilidade e conforto a quem o encontra. Ele é um símbolo de bons desejos, positividade e carinho, sendo muito querido por aqueles que buscam um personagem fofo e acolhedor.</p>
+            <p>Wish Me Mell é popular em produtos como pelúcias, acessórios e artigos de papelaria. Sua imagem e personalidade encantadora fazem dele um dos personagens favoritos da Sanrio entre os fãs de personagens meigos e tranquilos.</p>
+        </div>
+
+        <div class="character">
+            <h2>Jewelpet</h2>
+            <img src="https://cutekawaiiresources.wordpress.com/wp-content/uploads/2013/03/jewelpet.jpg" alt="Jewelpet" height="250" width="200">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 2008</p>
+            <p><strong>Espécie:</strong> Vários animais (cães, gatos, coelhos, etc.)</p>
+            <p><strong>Personalidade:</strong> Variedade de personalidades, mas geralmente amigáveis, leais e adoráveis.</p>
+            <p><strong>Jewelpet</strong> é uma série de personagens criados pela Sanrio, lançados em 2008. Os Jewelpets são animais mágicos com cristais preciosos em seus corpos, e cada um tem sua própria personalidade única. A série inclui uma variedade de personagens, como Ruby (um cachorro vermelho), Sapphie (um gato azul) e outros, que vivem em um mundo encantado e ajudam as pessoas a realizar desejos e superar desafios.</p>
+            <p>Os Jewelpets são conhecidos por sua fofura e magia, sendo populares em produtos como brinquedos, acessórios e animações. Eles cativaram principalmente as crianças, com suas aventuras encantadas e suas personalidades adoráveis, conquistando muitos corações ao redor do mundo.</p>
+        </div>
+
+        <div class="character">
+            <h2>Dear Daniel</h2>
+            <img src=https://i.pinimg.com/736x/da/f6/bb/daf6bb800b9cbd58de98e432465a806f.jpg alt="Dear Daniel" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 1999</p>
+            <p><strong>Espécie:</strong> Gato</p>
+            <p><strong>Personalidade:</strong> Amável, carinhoso e protetor.</p>
+            <p><strong>Dear Daniel</strong> é um personagem da Sanrio, criado em 1999. Ele é o namorado de Hello Kitty e é retratado como um gato de pelúcia com um estilo adorável e gentil. Conhecido por sua personalidade carinhosa, Daniel é muito protetor e sempre apoia Hello Kitty em suas aventuras. Ele é retratado como um personagem suave, amável e um pouco tímido, mas sempre com uma atitude positiva.</p>
+            <p>Dear Daniel é popular em produtos como pelúcias, acessórios, roupas e outros itens, especialmente entre os fãs de Hello Kitty e suas histórias.</p>
+        </div>
+
+        <div class="character">
+            <h2>Gudetama</h2>
+            <img src=https://i.pinimg.com/736x/f4/91/4a/f4914a18e6a3cdb9f91880c426cffa8f.jpg alt="Gudetama" height="250" width="250">
+            <p><strong>Criador:</strong> Sanrio</p>
+            <p><strong>Primeira aparição:</strong> 2013</p>
+            <p><strong>Espécie:</strong> Ovo preguiçoso</p>
+            <p><strong>Personalidade:</strong> Letárgico, desmotivado e sarcástico.</p>
+            <p><strong>Gudetama</strong> é um personagem da Sanrio criado em 2013. Ele é um ovo preguiçoso que não tem motivação para fazer nada e prefere ficar deitado, geralmente enrolado em uma fatia de bacon ou em sua casca quebrada. Gudetama é conhecido por seu humor sarcástico e sua visão cômica da vida cotidiana.</p>
+            <p>Apesar de sua atitude apática, Gudetama se tornou um personagem extremamente popular, aparecendo em mercadorias, animações e até cafés temáticos. Sua personalidade engraçada e seu comportamento desanimado conquistaram fãs ao redor do mundo.</p>
+        </div>
+    </section>
+
+    <script>
+        const menu = document.getElementById("menuLateral");
+        const btn = document.getElementById("toggleMenu");
+    
+        btn.addEventListener("click", () => {
+          menu.classList.toggle("expandido");
+          btn.textContent = menu.classList.contains("expandido") ? "◀" : "▶";
+        });
+      </script>
+<footer>
+        <p>&copy; 2025 Sanrio Town - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
